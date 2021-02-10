@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new1.component.css']
 })
 export class New1Component implements OnInit {
+  par: number = 161000;
 
   constructor() { }
 

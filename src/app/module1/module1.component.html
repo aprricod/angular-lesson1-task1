@@ -1,18 +1,22 @@
 <p>module1 works!</p>
-//interpolation 3-7
-<p>1.{{param1}}</p>
-<p>2.{{param2}}</p>
-<p>3.{{param3}}</p>
-<p>4.{{param4}}</p>
-<p>5.{{param5}}</p>
-//data binding 9-13
-<p>6.<input type="number" #p1 [value]="param1"></p>
-<p>7.<input type="checkbox" [value]="param2"></p>
-<p>8.<input type="text" [value]="param3" (input)="setValue($event)"></p>
-<p>9.<input type="text" [value]="param4"></p>
-<p>10.<input type="text" [value]="param5"></p>
-//подписка на событие
+<!-- interpolation 3-7 -->
+<p>1.{{ param1 }}</p>
+<p>2.{{ param2 }}</p>
+<p>3.{{ param3 }}</p>
+<p>4.{{ param4 }}</p>
+<p>5.{{ param5 }}</p>
+<p>5.1. {{ obj.c.d }}</p>
+<!-- data binding 9-13 -->
+<p>6.<input type="number" #p1 [value]="param1" /></p>
+<p>7.<input type="checkbox" [value]="param2" /></p>
+<p>8.<input type="text" [value]="param3" (input)="setValue($event)" /></p>
+<p>8.1.<input type="text" [value]="param4" /></p>
+<p>9.<input type="text" [value]="param4" /></p>
+<p>10.<input type="text" [value]="param5" /></p>
+<!-- подписка на событие -->
 <p><button type="button" (click)="setValue(p1)">Изменить</button></p>
-//двустороннее связывание
-<p>11<input type="number" [(ngModel)]="param3"></p>
-<p>12.{{inputParam6}}</p>
+<!-- двустороннее связывание -->
+<p>11<input type="number" [(ngModel)]="param3" /></p>
+<p>12.{{ inputParam6 }}</p>
+<p>{{ msg1 }}</p>
+<p>{{ msg2 }}</p>
